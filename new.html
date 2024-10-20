@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+  <meta name = "viewport" content="width-device-width ,initial-Scale=1.0">
+
+</head>
+
+<style>
+
+  /*section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+
+  section>div{
+
+  }
+
+  #div1{
+    font-size: small;
+    background-color: lightskyblue;
+    max-width: 200px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+
+  }
+
+  #div2{
+    font-size: small;
+    background-color: lightskyblue;
+    max-width: 200px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+
+  }
+
+  #div3{
+    font-size: small;
+    background-color: lightskyblue;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  #div4 {
+    font-size: small;
+    background-color: lightskyblue;
+    padding: 20px;
+    text-align: center;
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+
+  @media all and (max-width: 768px) {
+    section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+    @media all and (max-width: 500px) {
+      section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }*/
+
+
+  header{
+    height: 2%;
+    width: 100%;
+    border: 2px solid red;
+    position: relative;
+    box-shadow: red 10px 10px 10px;
+    margin: 0;
+
+  }
+
+  header>div>img{
+    height: 3vw;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+  }
+
+  header>nav{
+    height: fit-content;  /* athule tiyena text eka madata enawa*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+  }
+
+  header>nav>ul>li{
+    display: inline;
+    margin-left: 20px;
+
+  }
+  section:first-child>div{
+
+    color: black;
+    font-size: 5vw;
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    left: 15%;
+    bottom: 25%;
+    position: absolute;
+
+  }
+
+
+  section:first-child>img{
+    right: 10%;
+    bottom: 10%;
+    width: 30vw ;
+    height: 28vw;
+
+    position: absolute;
+  }
+
+
+  #cv{
+    width: 8vw;
+    height: 2vw;
+    border-color: red;
+    border-radius: 5vw;
+    font-size: small;
+    font-family: "Klee One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 10px 10px 10px red;
+    background: linear-gradient(to right, red 1%,red 100%,white 100%);
+    color: white;
+    left: 25%;
+    bottom: 10%;
+    position: absolute;
+
+  }
+
+
+  #about{
+    width: 25vw;
+    height: 15vw;
+    bottom: -60%;
+    left: 10%;
+    position: absolute;
+  }
+
+  section:nth-child(2){
+    position: relative;
+  }
+
+  #section2>h2{
+    left: 10%;
+    bottom: -20%;
+    position: absolute;
+  }
+
+  #section2>p{
+    left: 40%;
+    bottom: -50%;
+    position: absolute;
+  }
+
+  @media all and (max-width: 500px) {
+    nav {
+      display: none;
+    }
+
+    header{
+      width: 100%;
+    }
+
+  }
+
+
+
+
+</style>
+
+<body>
+
+<!--<section>-->
+
+<!--
+<div>
+<div id="div1">Card 01☀ <br> Lorem ipsum dolor
+   minima nam, natus, obcaecati quisquam <br> saepe soluta temporibus vel <br> . Amet architecto blanditiis eius <br> molestias mollitia quod sequi.
+  <button>Explore🌎</button>
+</div>
+</div>
+
+  <div>
+  <div id="div2">Card 02☀ <br> Lorem ipsum dolor
+    minima nam, natus, obcaecati quisquam <br> saepe soluta temporibus vel <br> . Amet architecto blanditiis eius <br> molestias mollitia quod sequi.
+      <button>Explore🌎</button>
+  </div>
+  </div>
+
+  <div>
+  <div id="div3">Card 03☀ <br> Lorem ipsum dolor
+    minima nam, natus, obcaecati quisquam <br> saepe soluta temporibus vel <br> . Amet architecto blanditiis eius <br> molestias mollitia quod sequi.
+ <button>Explore🌎</button>
+  </div>
+  </div>
+
+  <div>
+  <div id="div4">Card 04☀ <br> Lorem ipsum dolor
+    minima nam, natus, obcaecati quisquam <br> saepe soluta temporibus vel <br> . Amet architecto blanditiis eius <br> molestias mollitia quod sequi.
+     <button>Explore🌎</button>
+  </div>
+  </div>
+-->
+
+<header>
+  <div><img src="ASSERT/logoijse2.png" height="102" width="350"/></div>
+
+
+  <!-- navigation Section-->
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Service</li>
+      <li>Contact</li>
+      <li>About Us</li>
+    </ul>
+  </nav>
+</header>
+
+
+<!--homepage-->
+
+<main>
+
+  <section id="section1">
+
+    <div>Welcome <br> To <br> My WebSite</div>
+
+    <button id="cv">Cv</button>
+
+    <img src="ASSERT/c5146eabdc8364a544e91af43b9ca371.jpg" >
+
+  </section>
+
+</main>
+
+
+
+<section id="section2">
+
+  <h2>ABOUT</h2>
+
+  <img id="about" src="ASSERT/logoijse2.png">
+
+  <P> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequatur debitis doloremque iure minima nam, natus, obcaecati quisquam saepe soluta temporibus vel. Amet architecto blanditiis eius molestias mollitia quod sequi. </P>
+
+</section>
+
+
+<!--</section>-->
+</body>
+</html>

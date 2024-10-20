@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <style>
+
+    /*div{
+      background-color: springgreen;
+      width: 200px;
+      height: 200px;
+
+
+      !*animation: my-animation 5s;*!
+      animation-name: my-animation;
+      animation-duration: 5s;
+      animation-iteration-count: infinite; !*play wenna one wara gaana*!
+      animation-timing-function: linear; !*ekama speed eken wada karanwa*!
+      animation-direction: alternate-reverse; !*end eke idam start wenne*!
+      animation-delay: 5s; !*time ekk idala tamai start wenne*!
+      animation-play-state: unset; !*apassata yanwa*!
+
+
+    }*/
+
+   /* @keyframes my-animation {
+
+      from {
+        background: lightskyblue;
+      }
+
+      to {
+        background: darkred;
+        margin-left: 500px;
+        transform: rotate(360deg);
+      }
+
+    }*/
+
+     /*@keyframes my-animation {
+
+      0% {
+        background: lightskyblue;
+        transform: rotate(30deg);
+        margin-left: 100px;
+      }
+
+      25% {
+        background: yellow;
+        transform: rotate(60deg);
+        margin-left: 200px;
+
+      }
+
+       50% {
+         background: deeppink;
+         transform: rotate(50deg);
+         margin-left: 500px;
+
+       }
+
+       75% {
+         background: green;
+         transform: rotate(700deg);
+         margin-left: 700px;
+
+
+       }
+       100% {
+         background: red;
+         transform: rotate(1000deg);
+         margin-left: 1000px;
+
+
+       }*/
+
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin: 0;
+    }
+
+     section{
+       width: 100%;
+       height: 48vw;
+       border: red solid 2px;
+     }
+
+    #div{
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      border-color: green;
+        animation-name: my-animation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+    }
+
+    @keyframes my-animation {
+        0% {
+            margin-left: 0;
+            margin-top: 0;
+
+        }
+        25% {
+            margin-left: 0;
+            margin-top: 39vw;
+
+        }
+        50% {
+            margin-left: 92%;
+            margin-top: 39vw;
+
+        }
+        75% {
+            margin-left: 92%;
+            margin-top: 0;
+
+        }
+        100% {
+            margin-left: 0;
+            margin-top: 0;
+            animation-play-state: unset;
+
+
+        }
+    }
+  </style>
+
+</head>
+<body>
+
+<section>
+  <div id="div"></div>
+</section>
+
+</body>
+</html>

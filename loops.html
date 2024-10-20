@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<script>
+
+  /*for loops*/
+
+  var total = 0;
+
+  for (var i = 0; i <100; i++){
+
+    if ((i % 2) == 0){
+        total += i;
+    }
+
+  }
+
+  console.log(total)
+
+  var total2 = 0;
+
+  for (var i = 0; i <100; i++){
+    if ((i % 2) != 0){
+      total2 += i;
+    }
+  }
+
+  console.log(total2)
+
+  var total3 =0;
+  var i = 0;
+
+
+  while (i < 100){
+    if ((i % 2) == 0){
+      total3 += i;
+    }
+    i++;
+  }
+
+  console.log(total3)
+
+  var sum = 0;
+  var i = 0;
+
+  do{
+
+      var x = i%2;
+
+      if(x===0){
+
+          sum += i;
+      }
+
+      i++;
+  }while(i<100)
+  console.log(sum);
+
+</script>
+
+</body>
+</html>

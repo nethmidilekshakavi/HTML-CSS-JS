@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<button>Click</button>
+<h1>Hello JQuery !!</h1>
+<input
+type="text" placeholder="Enter Your Name">
+<br><br>
+
+<select>
+
+    <option value="java">Java</option>
+    <option value="js">JS</option>
+    <option value="css">css</option>
+    <option value="Html">Html</option>
+
+
+
+</select>
+
+<script src="../JS/jquery-3.7.1.min.js"></script>
+
+<script>
+
+/*
+  document.getElementsByTagName("button")[0].addEventListener('click')
+  console.log("clicked!")
+*/
+
+  /*$("button").click(function (){
+    console.log("clicked!")
+  })*/
+
+
+ /* $("button").dblclick(function (){
+
+    console.log("db Click")
+
+  })*/
+
+/*$("button").mouseenter(function (){
+
+  console.log("Mouse Enter")
+
+})*/
+
+/*$("h1").mouseleave(function (){
+
+  console.log("Mouse Enter")
+
+})*/
+
+/*$("h1").hover(function (){
+
+  console.log("Mouse Enter")
+
+})*/
+
+/*change Evenet*/
+/*
+
+$("input").change(function (){ console.log("JQuery change event");})
+
+$("input").focus(function (){ console.log("JQuery change event");})
+
+$("input").focus(function (){ console.log("JQuery change event");})
+
+$("input").blur(function (){ console.log("Focuse Out");})
+*/
+
+/*$("select").change(function (){
+
+    console.log("change language -->" , event.target.value)
+
+})
+
+//input eka use krnne on ekath ekk
+$("button").on('click',function (){
+    console.log("on method click !!")
+})*/
+
+/*
+$("input").on('input',function (){
+    console.log("input !!", event.target.value)
+})
+
+*/
+
+$("button").on({
+   click: function (){
+       console.log("hello")
+   },
+   dblclick:function (){
+       console.log("hi")
+   }
+})
+</script>
+</body>
+</html>

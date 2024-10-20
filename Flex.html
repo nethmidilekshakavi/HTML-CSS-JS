@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+
+    <style>
+
+     /*   section{
+            display: flex;
+            !*flex-direction:column-reverse ;*!
+        }
+
+        section>div{
+
+            background-color: dodgerblue;
+            border: 2px solid crimson;
+            height: 100px;
+            width: 100px;
+            aspect-ratio: 1/1;
+
+        }
+*/
+
+     section{
+
+         width: 1000px;
+         height: 250px;
+         border: 2px solid red;
+         display: flex;
+        /* justify-content: space-between;*/
+         justify-content: space-around;
+       /*  justify-content: space-evenly;*/
+
+
+
+     }
+
+     div:nth-child(1){
+
+         width: 100px;
+         height: 100px;
+         background-color: lightpink;
+         align-self: start;
+         box-shadow: 10px 10px 15px  lightcoral;
+
+     }
+
+     div:nth-child(2){
+
+         width: 100px;
+         height: 100px;
+         background-color:lightpink ;
+        align-self: center;
+         box-shadow: 10px 10px 15px   lightcoral;
+
+
+     }
+
+     div:nth-child(3){
+
+         width: 100px;
+         height: 100px;
+         background-color:deeppink ;
+         align-self: end;
+         box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+
+     }
+     div:nth-child(4){
+
+         width: 100px;
+         height: 100px;
+         background-color:deeppink ;
+         align-self: center;
+         box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+
+     }
+     div:nth-child(5){
+
+         width: 100px;
+         height: 100px;
+         background-color:red ;
+         align-self: start;
+         box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+
+     }
+     div:nth-child(6){
+
+         width: 100px;
+         height: 100px;
+         background-color:brown ;
+         align-self: center;
+         box-shadow: 10px 10px 15px rgba(0,0,0,0.5);
+
+     }
+    </style>
+
+
+
+</head>
+<body>
+
+
+
+<section>
+
+
+  <!--  <div>A</div>
+    <div>B</div>
+    <div>C</div>
+-->
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+</section>
+
+
+</body>
+</html>

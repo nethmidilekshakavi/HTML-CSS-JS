@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+  <style>
+
+
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+
+    #box{
+      width: 100px;
+      height: 100px;
+      background-color: cornflowerblue;
+      border: black 2px solid;
+    }
+
+  </style>
+
+</head>
+<body>
+
+<h3>First Name</h3>
+<input type="text" id="FN" placeholder="First Name">
+
+<h3>Last Name</h3>
+<input type="text" id="LN" placeholder="Last Name">
+
+<h3>Email</h3>
+<input type="email" id="email" placeholder="Email">
+
+<br> <br>
+
+<button id="save" style="background-color: yellow">Save</button>
+<button id="update" style="background-color: green">Update</button>
+<button id="delete" style="background-color: darkred">Delete</button>
+
+<h2>Customer Table</h2>
+
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Occupation</th>
+  </thead>
+
+  <tbody id="tbody">
+
+
+
+  </tbody>
+
+
+  </table>
+
+<h3></h3>
+
+<div id="box"></div>
+<script>
+  //double click (dbclick)
+  document.getElementById("save").addEventListener('dblclick', function (){
+
+    let fname = document.getElementById("FN").value;
+    let lname = document.getElementById("LN").value;
+    let email = document.getElementById("email").value;
+
+    /*let inner_html = document.getElementById("tbody").innerHTML*/
+
+    /*let new_html = inner_html + "<tr><td> " + fname +"</td><td> " + lname +"</td><td> " + email +"</td></tr>";*/
+
+    document.getElementById("tbody").innerHTML += "<tr><td> " + fname +"</td><td> " + lname +"</td><td> " + email +"</td></tr>";
+
+  })
+/*
+//click kragena inna kota
+  document.getElementById("FN").addEventListener("keydown",function (){
+          console.log("keyDown -----" + event.key);
+  })*/
+
+  /*//key eka press karana kotama
+  document.getElementById("FN").addEventListener("keypress",function (){//evenet ekakdi input krapu value eka allganna
+    console.log("keyPress----" + event.target.value);
+  })*/
+
+ /* //key eka up karaddi
+  document.getElementById("FN").addEventListener("keyup",function (){
+    console.log("keyup");
+  })
+*/
+
+  //key eka press karana kotama
+/*  document.getElementById("save").addEventListener("mouseup",function (){//evenet ekakdi input krapu value eka allganna
+    console.log("mouseUp---");
+  })
+
+  document.getElementById("save").addEventListener("mousedown",function (){//evenet ekakdi input krapu value eka allganna
+    console.log("mouseDown---");
+  })*/
+
+
+  document.getElementById("box").addEventListener("mouseenter",function (){
+    console.log("Mouse Enter !!");
+  })
+
+  document.getElementById("box").addEventListener("mouseover",function (){
+    console.log("Mouse Over !!");
+  })
+
+  document.getElementById("box").addEventListener("mouseleave",function (){
+    console.log("Mouse Leave !!");
+  })
+
+  document.getElementById("box").addEventListener("mouseout",function (){
+    console.log("Mouse Out !!");
+  })
+
+
+</script>
+
+</body>
+</html>

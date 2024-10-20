@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--External-->
+    <link rel="stylesheet" href="../Style/style.css">
+    <title>Css</title>
+    <style>
+
+       /* /*type slector*/
+      /*  h2{
+            color: green;
+        }
+       /*id selector*/
+       /* #mytopci{
+            background-color: aquamarine;
+        }
+
+        .p1{
+            background-color:lightblue;
+        }
+        #d1{
+            color: orangered;
+        }*/
+
+      /* *{
+           color: black;
+       }*/
+
+       /*Attribute selector with starting value*/
+      /* [href^= "https"]{
+           font-weight: bold;
+       }
+       [href= "http://ijse.lk"]{
+          color: blue;
+       }
+       /*Attribute selector with ending value*/
+      /* [href$=".com"]{
+           background-color: crimson;
+       }
+       [href$=".lk"]{
+           background-color: olivedrab;
+       }*/
+
+      /* [href*="ijse"]{
+           background-color: orangered;
+       }*/
+
+      /* [href~="ijse"]{
+           background-color: springgreen;
+       }*/
+/*
+       h4[class]{
+           background-color: yellow;
+       }
+ */
+
+ /*mekedi text eka udata giayama color eka apply wenwa*/
+    h1:hover{
+        color: red;
+    }
+
+       /*mekedi text eka udata gihill click krama color eka apply wenwa*/
+     /*  h1:active{
+           color: mediumpurple;
+       }
+
+       a:visited{
+           color: orangered;
+       }
+       input:focus{
+           background-color: yellow;
+       }
+        li:first-child{
+            color: black;
+            background-color: lightskyblue;
+        }
+       li:last-child{
+           color: black;
+           background-color: lightseagreen;
+       }
+       li:nth-child(3){
+           color: black;
+           background-color: springgreen;
+       }
+       li:nth-child(2) {
+           color: black;
+           background-color: plum;
+       }
+       li:nth-child(4){
+           color: black;
+           background-color: deeppink;
+       }
+       li:nth-child(5){
+           color: black;
+           background-color:goldenrod;
+       }*/
+
+      /* li:nth-last-child(2){
+           color: black;
+           background-color: lightseagreen;
+       }*/
+
+       /*1 gunakara walat color krl pennwa*/
+      /* li:nth-child(odd){
+           color: hotpink;
+           background: lightpink;
+       }*/
+
+       /*2 gunakara walat color krl pennwa*/
+       /*li:nth-child(even){
+           color: lightpink;
+           background: lightpink;
+       }*/
+
+       /*n==0 e hinda ekathu karge karagena yanwa*/
+       /*li:nth-child(n+4){
+           color: lightseagreen;
+           background-color: lightseagreen;
+       }*/
+
+
+      /* li:nth-child(3n-1){
+           color: lightseagreen;
+           background-color: lightseagreen;}*/
+
+
+       /*li:nth-child(3n+1){
+           color: lightpink;
+           background: lightpink;
+       }*/
+
+
+     h1::before{
+         content:"😁😏";
+         background: red;
+
+     }
+     h1::after{
+         content:"😴";
+     }
+
+     p::first-letter{
+         font-weight: bold;
+         color: goldenrod;
+     }
+
+     input{
+         color: springgreen;
+     }
+
+     input::placeholder{
+         color: blue;
+     }
+
+     input[type="file"]{
+         background: blue;
+     }
+
+     p::first-line{
+         background-color: yellow;
+     }
+
+       p::selection {
+           color: yellow;
+       }
+
+       li::marker{
+           content: "🚓";
+
+       }
+
+       /*Grouping Selector*/
+
+       h1,ul{
+           font-weight: bold;
+       }
+
+       h1:hover::before{
+           color: lightpink;
+       }
+
+    </style>
+</head>
+<body>
+<!--Inline-->
+
+<!--<h1 style="color: blue">Welcome to IJSE 1</h1>
+<h1 id="mytopci" style="color: blue">Welcome to IJSE 2</h1>
+<h2>Welcome to HTML</h2>
+<h3>Hello</h3>
+<br>-->
+
+<h1>Institute of Software Engineering</h1><br>
+<p class="p1">Lorem ipsum dolor sit amet, consectetur adLorem ipsum dolor sit amet, consectetur adLorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius fugiat quam voluptate. A, commodi cupiditate doloribus labore minima naLorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius fugiat quam voluptate. A, commodi cupiditate doloribus labore minima naLorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius fugiat quam voluptate. A, commodi cupiditate doloribus labore minima naLorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius fugiat quam voluptate. A, commodi cupiditate doloribus labore minima naipisicing elit. Ea eius fugiat quam voluptate. A, commodi cupiditate doloribus labore minima naipisicing elit. Ea eius fugiat quam voluptate. A, commodi cupiditate doloribus labore minima naLorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius fugiat quam voluptate. A, commodi cupiditate doloribus labore minima nam officia pariatur, perspiciatis porro reiciendis rem sit soluta suscipit velit.</p>
+
+<input type="text" placeholder="Enter Your Name">
+<input type="file">
+<!--<p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius fugiat quam voluptate. A, commodi cupiditate doloribus labore minima nam officia pariatur, perspiciatis porro reiciendis rem sit soluta suscipit velit.</p>
+
+<p id="d1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius fugiat quam voluptate. A, commodi cupiditate doloribus labore minima nam officia pariatur, perspiciatis porro reiciendis rem sit soluta suscipit velit.</p>
+
+<h4 class="hi">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius fugiat quam voluptate</h4>
+<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eius fugiat quam voluptate</h4>
+<a href="https:// ijse .lk">IJSE 1</a> <br>
+<a href="http:// ijse .lk">IJSE 2</a><br>
+<a href="https://abc.com">ABC</a><br>
+<a href="https://Hiru.com">Hiru</a><br>
+<a href="https://ijse.lankasri.com">IJSE 3</a>-->
+
+
+<!--<h1>Institute of Software Engineering</h1>
+<br>
+<a href="https://sirasatv.lk">Sirasa TV</a><br>
+<a href="https://Hiru.lk">Hiru</a><br>
+<a href="https://int.lk">ITN</a><br>
+
+<input type="text" name="" id="">
+-->
+
+<p></p>
+<ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>F</li>
+    <li>G</li>
+    <li>H</li>
+</ul>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="myBtn"> Click ME</button>
+<input id="girl">
+<input id="boy">
+
+<script>
+    document.getElementById("myBtn").addEventListener('click', function (){
+        console.log("cliked!");
+
+         var val = document.getElementById("input")
+
+    })
+</script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<label for="boy">Boy</label>
+<br>
+<input id="boy">
+<br>
+<label for="girl">Girl</label>
+<br>
+<input id="girl">
+<br>
+<button id="myBtn">Match!</button>
+
+<script>
+
+    document.getElementById("myBtn").addEventListener('click', function (){
+        console.log("Clicked!");
+
+       /* /input field ekka data ganna .value eken ganna puluwan/*/
+        var boy = document.getElementById("boy").value;
+        console.log(boy);
+
+        var girl = document.getElementById("girl").value;
+        console.log(girl);
+
+        var x = boy.length;
+        var y = girl.length;
+
+        var total = x + y;
+        var n = total % 100;
+        /*floor wateyala ganna*/
+        var z = Math.floor(Math.random()*10);
+        var m = n + z;
+
+        console.log(m);
+
+
+
+    })
+</script>
+</body>
+</html>

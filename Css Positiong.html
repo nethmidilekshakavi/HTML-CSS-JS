@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<style>
+
+    /*relative Postion*/
+  /*  div{
+        background-color: purple;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 300px;
+        right: 300px;
+    }*/
+
+
+    /*absolutely position*/
+    section{
+        background-color: yellow;
+        width: 500px;
+        height: 500px;
+        position: relative;
+    }
+
+    section>div:nth-child(1){
+        background-color: blue;
+        width: 100px;
+        aspect-ratio: 1/1; /*left and right dekama eka value ekk denna one nm*/
+        position: absolute;
+    }
+
+    section>div:nth-child(2){
+        background-color: purple;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 0;
+    }
+
+    section>div:nth-child(3){
+        background-color: orangered;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    section>div:nth-child(4){
+        background-color: deeppink;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        right: 0;
+    }
+
+
+
+</style>
+
+
+
+<body>
+
+
+    <div></div>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+
+</body>
+</html>

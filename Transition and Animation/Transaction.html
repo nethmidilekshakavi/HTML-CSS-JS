@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+  <style>
+
+    div{
+      width: 200px;
+      height: 200px;
+      background: lightcoral;
+      border: 2px solid darkblue;
+      transition-duration: 3s;
+       /* transition-property: background , border , transform;*/
+        transition: background , border, transform 3s linear ;
+    }
+
+  div:hover{
+        background: greenyellow;
+        border: 5px solid darkblue;
+         border-radius: 100%;
+        /*transition-delay: 5s;*/
+        transform: rotate(90deg);
+        /*transition-timing-function: linear;*/ /*eka speed time ekk yanne dekatama start ekatai end ekatai*/
+        transition-timing-function: ease-out; /*defult apply weno meka */
+
+  }
+
+  </style>
+
+
+</head>
+<body>
+
+<div></div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kkk</title>
+</head>
+<body>
+
+
+<script>
+/*0 idam gana kranne space ekath aithi wenwa*/
+  var new_Str = "hello world world";
+  var x =   new_Str.indexOf("world")
+  console.log(x)
+
+  /*anithma eke idam ganagan krl index eka kiyanwa*/
+  new_Str.lastIndexOf("world")
+ console.log(new_Str.lastIndexOf("world"));
+
+  /*local compire*/
+  var str1 = "apple";
+  var str2 = "mango";
+  var str3 = "mango";
+  var str4 = "Mango";
+  var str5 = "MaNgo";
+
+  let l = "the quick Brown fox jumps Over the lazy dog"
+
+  /*language ekath compare kranwa string*/
+  str1.localeCompare(str2)
+  console.log(str1.localeCompare(str2))
+
+  console.log(str2.localeCompare(str1))
+
+  console.log(str2.localeCompare(str3))
+
+  console.log(str2.localeCompare(str3))
+
+  console.log(str4.localeCompare(str5))
+
+  console.log(str5.localeCompare(str4))
+
+/*paththa maru karama wens weno -1 and 1 weight eka anuwa compare krl balanwa*/
+/*3 4 ta wada wadi  nisa 1 dunne*/
+  console.log(str4.localeCompare(str3))
+  /*3 4 ta wada adu nisa -1 dunne*/
+  console.log(str3.localeCompare(str4))
+
+/*akuru gaana balaganna */
+console.log(l.match(/o/g))
+console.log(l.match(/e/g))
+
+/*capital akuru walinm patan ganna words tika ganna*/
+console.log(l.match(/([A-Z])\w+/g))
+
+var string = "A B C D E"
+
+/*space walata , daana one nm use kranwa*/
+console.log(string.replace(" " , ","))
+console.log(string.replaceAll(" " , ","))
+
+/*search*/
+
+var y = "hello hi welcome ijse"
+/* methna me wachane thiyena index eka denwa*/
+// console.log(y.search('hi'))
+
+/*deela theena thana idam enne*/
+console.log(y.slice(2))
+console.log(y.slice(3,7))
+
+/*, eken passe kadanna kiyal */
+t  = "1,2,3,4,5"
+console.log(t.split(", "))
+
+var p = "hello, world";
+
+console.log(p.startsWith("hello"))
+
+console.log(p.substr(4))
+/*mekedi wenne deela thens palaweni index eke idam anith deela theena caeahctors space okoma ekk ekat yanwakm akuru tika dna eka*/
+console.log(p.substr(4,5));
+
+/*index eka ganne*/
+console.log(p.substring(4,12))
+
+/*browser eket aunwa rules compre krl blanwa*/
+console.log(p.toLocaleLowerCase())
+console.log(p.toLocaleUpperCase())
+
+/*capital letters enne  uda idam thamai unicode rules use kranwa sranted rules*/
+console.log(p.toLowerCase())
+console.log(p.toUpperCase())
+
+/***ratak tragert krl wen elkk dev kranwam localcses use krana eka hodai*/
+
+/*meka krana kota space walin ena problem adu wenwa ewa ain kramnwa*/
+var u = " Nethmi Dileksha "
+console.log(u.trim())
+
+
+</script>
+</body>
+</html>

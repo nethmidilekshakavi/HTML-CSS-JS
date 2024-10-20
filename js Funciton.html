@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js Function</title>
+</head>a
+<body>
+<script>
+
+  function myFunction(){
+        console.log("Hiii")
+  }
+
+  function myFunction(i,x){
+      let total = i + x
+/*
+      + ekath danna puluwan , daannath puluwan
+*/
+      console.log("sum :" , total)
+  }
+
+myFunction(1,2)
+
+  /*
+Named Function
+*/
+
+  /*function Expreession------------------------------------------------------------------------*/
+
+  //const  thiyanna hamawelema
+ const  myfunction2 = function (){
+      console.log("My Function 2")
+  }
+
+
+  const  myfunction3 = function (a,b){
+     const t = a + b;
+      console.log("Total : " + t)
+  }
+
+  myfunction2();
+ myfunction3(5,5);
+
+  /*function Constructor------------------------------------------------------------------------*/
+
+ const  Myfunction4 = new Function("arg1" , "arg2", "return arg1 + arg2");
+  let result =   Myfunction4(10,20)
+  console.log("Result : " + result)
+
+
+  /*Arrow Function------------------------------------------------------------------------*/
+
+     const myArrowFunctio = ()=>{
+          console.log("My Arrow Function !")
+  }
+
+  const myArrowFunctio1 = (o,p)=>{
+         const tot = 0+p;
+      console.log("tot : " + tot)
+  }
+
+  myArrowFunctio();
+  myArrowFunctio1(70,40);
+
+  /*Arrow Function------------------------------------------------------------------------*/
+
+  //Anonymous Function
+  document.getElementById("mybtn").addEventListener('click' , function (){
+
+  });
+
+
+  //Arrow Function
+  document.getElementById("mybtn").addEventListener('click' , () => {
+
+  })
+
+
+
+</script>
+
+
+</body>
+</html>
